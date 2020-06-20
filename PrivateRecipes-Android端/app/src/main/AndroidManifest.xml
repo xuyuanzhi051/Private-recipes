@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.privaterecipes">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".CommentsActivity"
+            android:label="我的评论"></activity>
+        <activity
+            android:name=".SearchMenuActivity"
+            android:label="菜谱搜索" />
+        <activity
+            android:name=".MenuDetailsActivity"
+            android:label="菜谱详情" />
+        <activity
+            android:name=".EditPersonalInfomationActivity"
+            android:label="编辑资料" />
+        <activity
+            android:name=".MainFragmentActivity"
+            android:label="私家菜谱" />
+        <activity
+            android:name=".RegistActivity"
+            android:label="注册界面" />
+        <activity
+            android:name=".MainActivity"
+            android:label="登录界面">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
